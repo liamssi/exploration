@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -103,3 +104,10 @@ dist
 # TernJS port file
 .tern-port
 .svelte/
+=======
+.DS_Store
+node_modules
+/.svelte
+/build
+/functions
+>>>>>>> base template setup
