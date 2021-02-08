@@ -40,10 +40,11 @@ module.exports = {
     },
     mount: {
         '.svelte/assets': `/${process.env.SVELTE_KIT_APP_DIR}/assets`,
-        'src/components': '/_components'
+        'src/components': '/_components',
     },
     alias: {
         $app: './.svelte/assets/runtime/app',
-        $components: './src/components'
+        $components: './src/components',
+        $state: './src/state'
     }
 };
