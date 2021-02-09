@@ -9,7 +9,7 @@ module.exports = {
 	plugins: [
 		// Some plugins, like postcss-nested, need to run before Tailwind
 		
-		tailwindcss('./tailwind.config.cjs'),
+		tailwindcss("./tailwind.config.cjs"),
 		
 		// But others, like autoprefixer, need to run after
 

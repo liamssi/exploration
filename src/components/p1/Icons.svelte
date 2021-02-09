@@ -1,28 +1,61 @@
 <div class="hidden">
-    <svg >
+  <svg>
+    <symbol id="home" viewBox="0 0 24 24">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline
+        points="9 22 9 12 15 12 15 22"
+      />
+    </symbol>
 
-        <symbol id='home' class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-        </symbol>
+    <symbol id="heart" viewBox="0 0 24 24">
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </symbol>
+    <symbol id="cog" viewBox="0 0 24 24">
+      <path
+        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+      /><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </symbol>
 
-        <symbol id='heart'  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-        </symbol>
-        <symbol id='cog' class="w-6 h-6" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+    <symbol id="logout" viewBox="0 0 24 24">
+      <path
+        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+      />
+    </symbol>
 
-        </symbol>
-
-        <symbol id='logout'  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-        </symbol>
-
-        <symbol id='chevron-down' class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"></path>
-        </symbol>
-        <symbol id='chat' class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-        </symbol>
-
-    </svg>
+    <symbol id="chevron-down" viewBox="0 0 24 24">
+      <path d="M19 9l-7 7-7-7" />
+    </symbol>
+    <symbol id="chat" viewBox="0 0 24 24">
+      <path
+        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+      />
+    </symbol>
+    <symbol id="wallet" viewBox="0 0 24 24">
+      <path
+        d="M1.3,1.758,14.59,5.077A4.054,4.054,0,0,1,17.5,8.805v12a2.272,2.272,0,0,1-2.92,2.312L3.42,20.493A3.983,3.983,0,0,1,.5,16.805v-13a3.009,3.009,0,0,1,3-3h17a3.009,3.009,0,0,1,3,3v11a3.008,3.008,0,0,1-3,3h-3"
+      />
+      <line x1="9.5" y1="3.805" x2="19.5" y2="3.805" />
+      <circle cx="13" cy="13.805" r="2" />
+      <line class="a" x1="17.5" y1="8.805" x2="19.5" y2="8.805" />
+    </symbol>
+    <symbol id="doc" viewBox="0 0 24 24">
+      <path
+        d="M 14,2 H 6 C 4.8954305,2 4,2.8954305 4,4 v 16 c 0,1.1 0.9,2 2,2 h 12 c 1.104569,0 2,-0.895431 2,-2 V 8 l 0.04325,-4.1585251 C 19.808335,2.6269526 18.90549,1.9639047 17.995665,2.0512393 Z"
+      />
+      <path
+        d="M 16,12.076923 H 8 m 8,4 H 8 M 12.795948,7.0378756 8,7.1538462"
+      />
+    </symbol>
+  </svg>
 </div>
+
+<style>
+  symbol * {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 1.6;
+    fill: none;
+    stroke: currentColor;
+  }
+</style>

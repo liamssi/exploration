@@ -1,4 +1,6 @@
 const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     purge: {
         content: [
@@ -15,10 +17,15 @@ module.exports = {
     },
     darkMode: 'class',
 	theme: {
-		extend: {},
+        
+		extend: {
+            colors: {
+                orange:colors.orange
+            },
+        },
 	},
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-shadow-outline-colors')()],
 };
