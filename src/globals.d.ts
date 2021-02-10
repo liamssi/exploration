@@ -52,3 +52,6 @@ declare module "*.webp" {
 	export = value;
 }
 //#endregion
+declare module "*.ts" {
+
+}

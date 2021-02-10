@@ -11,6 +11,8 @@ module.exports = {
     },
     plugins: [
         [
+
+       
             '@snowpack/plugin-svelte',
             {
                 compilerOptions: {
@@ -19,7 +21,7 @@ module.exports = {
                 configFilePath: 'svelte.config.cjs'
             }
         ],
-    
+        '@snowpack/plugin-typescript',
         [
             '@snowpack/plugin-build-script',
             {
@@ -29,7 +31,6 @@ module.exports = {
             }
         ],
 
-        '@snowpack/plugin-typescript'
     ],
     devOptions: {
         open: 'none',
@@ -41,10 +42,11 @@ module.exports = {
     mount: {
         '.svelte/assets': `/${process.env.SVELTE_KIT_APP_DIR}/assets`,
         'src/components': '/_components',
+        'src/state': '/_state',
     },
     alias: {
         $app: './.svelte/assets/runtime/app',
         $components: './src/components',
-        $state: './src/state'
+        $state: './src/state',
     }
 };

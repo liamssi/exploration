@@ -27,6 +27,7 @@ module.exports = {
 	variants: {
 		extend: {
             width: ['hover', 'focus-within']
+            
         },
 	},
 	plugins: [require('@tailwindcss/typography'),require('tailwindcss-shadow-outline-colors')()],

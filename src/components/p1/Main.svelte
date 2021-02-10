@@ -11,17 +11,25 @@
   <div class="md:w-24 sm:w-16 bg-white shadow-sm">
     <SideBar />
   </div>
-  <div class='flex-grow flex flex-row  '>
+  <div class="flex-grow flex flex-row  ">
     <div class="md:w-3/4 sm:w-full bg-gray-50"><MainView /></div>
-  <div class=" md:w-1/4 sm:w-0 bg-white"><SideRight /></div>
+    <div class=" md:w-1/4 sm:w-0 bg-white"><SideRight /></div>
   </div>
-  
 </div>
+
 <style global>
-* {
-  @apply font-sans;
-}
-.title-1{
-  @apply text-xl font-bold text-gray-700
-}
+  * {
+    @apply font-sans;
+  }
+  .title-1 {
+    @apply text-xl font-bold text-gray-700;
+  }
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
 </style>
