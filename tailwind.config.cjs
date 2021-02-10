@@ -21,11 +21,13 @@ module.exports = {
 		extend: {
             colors: {
                 orange:colors.orange
-            },
+            }
         },
 	},
 	variants: {
-		extend: {},
+		extend: {
+            width: ['hover', 'focus-within']
+        },
 	},
-	plugins: [require('tailwindcss-shadow-outline-colors')()],
+	plugins: [require('@tailwindcss/typography'),require('tailwindcss-shadow-outline-colors')()],
 };

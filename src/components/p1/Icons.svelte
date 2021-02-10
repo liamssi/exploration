@@ -26,6 +26,10 @@
     <symbol id="chevron-down" viewBox="0 0 24 24">
       <path d="M19 9l-7 7-7-7" />
     </symbol>
+    <symbol id="chevron-right" viewBox="0 0 24 24">
+    <path d="M9 5l7 7-7 7"></path>
+    </symbol>
+    
     <symbol id="chat" viewBox="0 0 24 24">
       <path
         d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
@@ -47,15 +51,21 @@
         d="M 16,12.076923 H 8 m 8,4 H 8 M 12.795948,7.0378756 8,7.1538462"
       />
     </symbol>
+    <symbol id="search" viewBox="0 0 24 24">
+      <path  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+    </symbol>
+
   </svg>
 </div>
-
+<script>
+let st=5
+</script>
 <style>
   symbol * {
     stroke-linejoin: round;
     stroke-linecap: round;
-    stroke-width: 1.6;
     fill: none;
     stroke: currentColor;
   }
+  
 </style>

@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tailwindcss/typography": "^0.4.0",
 		"tailwindcss-shadow-outline-colors": "0.0.8"
 	}
 }
