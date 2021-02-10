@@ -17,7 +17,7 @@ import {categories} from "../../state/p1"
 
     </div>
 
-    <div>
+    <div  class='menu'>
         
     </div>
 </div>
