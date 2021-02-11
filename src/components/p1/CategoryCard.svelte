@@ -7,20 +7,20 @@
 </script>
 
 <div class="card  flex flex-col items-center justify-evenly " class:active>
-  <div class="icon ">
+  <div class="icon emoji">
     {category.emoji}
   </div>
   <div class="name">
     {category.name}
   </div>
   <div class="button">
-    <Icon name="chevron-right" size={28} stroke={2} />
+    <Icon name="chevron-right" size={28} strokeWidth={2} />
   </div>
 </div>
 
 <style>
   .card {
-    @apply bg-white w-36 h-48 shadow-sm rounded-2xl cursor-pointer;
+    @apply bg-white w-32 h-48 shadow-sm rounded-2xl cursor-pointer;
     /* some hover efect */
     @apply hover:shadow-md;
   }
