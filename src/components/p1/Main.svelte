@@ -7,13 +7,17 @@
 </script>
 
 <Icons />
-<div class="min-w-full min-h-screen bg-red-500 flex flex-row">
-  <div class="md:w-24 sm:w-16 bg-white shadow-sm">
+<div class="flex flex-col-reverse  md:flex-row h-screen">
+  <div
+    class="flex-shrink w-full h-16  md:h-full md:w-24  lg:w-36 shadow-sm bg-white "
+  >
     <SideBar />
   </div>
-  <div class="flex-grow flex flex-row  ">
-    <div class="md:w-3/4 sm:w-full bg-gray-50"><MainView /></div>
-    <div class=" md:w-1/4 sm:w-0 bg-white"><SideRight /></div>
+  <div class="flex-auto h-full  bg-gray-50 overflow-scroll ">
+    <MainView />
+  </div>
+  <div class="flex-grow h-0 w-0   lg:w-96 lg:h-full bg-white ">
+    <SideRight />
   </div>
 </div>
 
@@ -24,12 +28,12 @@
   .title-1 {
     @apply text-xl font-bold text-gray-700;
   }
-  * {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
+
+  .full-h {
+    min-height: -webkit-fill-available;
   }
 
-  *::-webkit-scrollbar {
-    display: none;
+  .app {
+    @apply h-screen w-screen border-yellow-600 border-4;
   }
 </style>

@@ -1,11 +1,13 @@
+<script lang="ts">
+  export let name;
+  export let size: number | string = 20;
+  export let strokeWidth: number = 1.1;
+  export let fill: string = "none";
+  let klass: string = "";
 
-<script lang='ts'>
-	export let name;
-	export let size:number|string = 20;
-	export let strokeWidth:number=1.1
-	export let fill:string='none'
+  export { klass as class };
 </script>
 
-<svg class="" width={size} height={size} fill={fill}  >
-	<use xlink:href='#{name}' stroke-width={strokeWidth} />
+<svg width={size} height={size} class={klass} {fill}>
+  <use xlink:href="#{name}" stroke-width={strokeWidth} />
 </svg>

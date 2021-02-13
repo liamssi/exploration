@@ -11,14 +11,14 @@ export const user = {
 export type category = {
     name: string,
     emoji: string, //yeah i knoe lol
-    itemes?: food[]
+    menu?: food[]
 }
 export type food = {
     name: string,
     imgUrl: string,
     price: number,
     rating: number
-    tags?: string[]
+    tag?: string
 
 }
 
@@ -26,49 +26,54 @@ export const categories: category[] = [
     {
         name: 'Pizza',
         emoji: '🍕', //yeah i knoe lol
-        itemes: [
+        menu: [
 
             {
                 name: "Mushroom Pizza",
-                imgUrl: "./imgs/pi1.png",
+                imgUrl: "./imgs/p1.png",
                 price: 7.49,
-                rating: 5
+                rating: 5,
+                tag:'fire'
+
+
 
             },
             {
                 name: "Italian Pizza",
-                imgUrl: "",
+                imgUrl: "./imgs/p2.png",
                 price: 6.59,
-                rating: 4
+                rating: 4,
+                tag:'fav'
             },
 
             {
                 name: "Sausage Pizza",
-                imgUrl: "",
+                imgUrl: "./imgs/p1.png",
                 price: 5.49,
-                rating: 5
+                rating: 5,
+                tag:'popular'
             },
 
         ]
     }, {
         name: 'Burger',
         emoji: '🍔', //yeah i knoe lol
-        itemes: []
+        menu: []
     }, {
         name: 'Hotdog',
         emoji: '🌭', //yeah i knoe lol
-        itemes: []
+        menu: []
     }, {
         name: 'Taco',
         emoji: '🌮', //yeah i knoe lol
-        itemes: []
+        menu: []
     }, {
         name: 'Snack',
         emoji: '🍿', //yeah i knoe lol
-        itemes: []
+        menu: []
     }, {
         name: 'Drink',
         emoji: '🍹',
-        itemes: []
+        menu: []
     }
 ] 

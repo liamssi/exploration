@@ -1,8 +1,7 @@
-<div class="banner bg-orange-100 w-full h-full rounded-4xl">
+<div class="banner bg-orange-300   rounded-2xl h-36 sm:h-48 ">banner</div>
 
-</div>
 <style>
-.banner{
+  .banner {
     border-radius: 25px;
-}
+  }
 </style>

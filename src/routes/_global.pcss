@@ -16,3 +16,34 @@
 .emoji {
   font-family: NotoColorEmoji;
 }
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  @apply overflow-hidden box-border;
+}
+
+.noscrollbar {
+  -ms-overflow-style: none; /* IE and Edge*/
+  scrollbar-width: none;
+}
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+body {
+  @apply noscrollbar;
+}
+
+*::-webkit-scrollbar {
+  @apply w-1;
+}
+
+*::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-orange-300 cursor-pointer hover:bg-orange-400;
+}

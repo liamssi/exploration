@@ -1,12 +1,19 @@
 <script>
+  import { getContext } from "svelte";
   import type { category } from "$state/p";
   import Icon from "./Icon.svelte";
 
   export let category: category;
   export let active: boolean = false;
+
+  const setMenu: Function = getContext("setMenu");
 </script>
 
-<div class="card  flex flex-col items-center justify-evenly " class:active>
+<div
+  class="card  flex flex-col items-center justify-evenly "
+  class:active
+  on:click={() => setMenu(category.menu)}
+>
   <div class="icon emoji">
     {category.emoji}
   </div>
@@ -24,6 +31,7 @@
     /* some hover efect */
     @apply hover:shadow-md;
   }
+
   .card .icon {
     @apply text-4xl bg-white p-3 rounded-full;
   }
@@ -36,6 +44,7 @@
     /* hover */
     @apply hover:bg-orange-500;
   }
+  .active .card,
   .card.active {
     @apply bg-orange-400;
   }
