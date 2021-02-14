@@ -16,7 +16,8 @@
   <div class="flex-auto h-full  bg-gray-50 overflow-scroll ">
     <MainView />
   </div>
-  <div class="flex-grow h-0 w-0   lg:w-96 lg:h-full bg-white ">
+  <!--make responsive -->
+  <div class="flex-grow h-full w-full   lg:w-96 lg:h-full bg-white ">
     <SideRight />
   </div>
 </div>

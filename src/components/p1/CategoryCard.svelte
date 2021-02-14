@@ -27,7 +27,7 @@
 
 <style>
   .card {
-    @apply bg-white w-32 h-48 shadow-sm rounded-2xl cursor-pointer;
+    @apply bg-white w-32 h-48 shadow-sm rounded-2xl cursor-pointer transition-colors;
     /* some hover efect */
     @apply hover:shadow-md;
   }
@@ -47,6 +47,10 @@
   .active .card,
   .card.active {
     @apply bg-orange-400;
+    --tw-shadow: 0 4px 6px -1px rgba(235, 88, 9, 0.2),
+      0 3px 11px -2px rgba(235, 88, 9, 0.2);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #eb5809),
+      var(--tw-ring-shadow, 0 0 #eb5809), var(--tw-shadow);
   }
 
   .card.active .name {

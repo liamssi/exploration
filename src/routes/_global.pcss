@@ -12,6 +12,10 @@
   font-family: "NotoColorEmoji";
   src: url("fonts/NotoColorEmoji.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
 
 .emoji {
   font-family: NotoColorEmoji;
@@ -21,9 +25,11 @@ body {
   padding: 0;
   margin: 0;
 }
-
+.roboto {
+  font-family: Roboto;
+}
 * {
-  @apply overflow-hidden box-border;
+  @apply overflow-hidden box-border roboto;
 }
 
 .noscrollbar {
@@ -36,6 +42,9 @@ body {
 body {
   @apply noscrollbar;
 }
+.scrollbar::-webkit-scrollbar {
+  display: block;
+}
 
 *::-webkit-scrollbar {
   @apply w-1;
@@ -45,5 +54,5 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  @apply bg-orange-300 cursor-pointer hover:bg-orange-400;
+  @apply bg-gray-100 cursor-pointer hover:bg-gray-200;
 }
