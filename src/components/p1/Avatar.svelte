@@ -20,7 +20,7 @@ function toggle() {
 }
 </script>
 
-<div class='card flex flex-row items-center space-x-3 hover:shadow-sm rounded-full bg-white' on:click="{toggle}">
+<div class='card flex flex-row items-center space-x-3 hover:shadow-sm rounded-full bg-white {visible ? 'bg-blue-50':''}' on:click="{toggle}">
     <div class="avater w-14 h-14 rounded-full  flex justify-center items-center cursor-pointer bg-blue-100 hover:bg-blue-200 transition-all">
         <img class='transition-transform w-11 hover:w-12 hover:absolute hover:rotate-6' alt='avatar' src="{user.avatarUrl}">
 
