@@ -1,4 +1,5 @@
 <script lang="ts">
+import { space } from 'svelte/internal';
 import Icon from './Icon.svelte'
 import SimIcon from './SimIcon.svelte';
 import VisaIcon from './VisaIcon.svelte';
@@ -6,11 +7,17 @@ import VisaIcon from './VisaIcon.svelte';
 
 export let total =52;
 export let holder:string='Jeremy Mathew'
-</script>
-<div class="w-80 h-48  py-6 px-8 relative ">
-    <div class='crd-card-bg'>
-    </div>
 
+
+let hover= false;
+
+
+
+</script>
+<div class="w-80 h-48  py-6 px-8 relative"  >
+    <div class='crd-card-bg' class:hover>
+    </div>
+ 
     <div class='card'>
         <div class='bg'></div>
         <div  class='bg'></div>
@@ -22,8 +29,8 @@ export let holder:string='Jeremy Mathew'
         <div  class='bg'></div>
         <div class='bg'></div> 
     </div>
-  
-    <div class='card-content flex flex-col p-5 text-white opacity-80 justify-between'>
+
+    <div class='card-content flex flex-col p-5 text-white opacity-80 justify-between   mouse-pointer' on:mouseenter="{()=>hover=true}" on:mouseleave="{()=>hover=false}">
         <div class="flex flex-row justify-between font-mono">
             <div>Debit Card</div>
             <div class='w-10 '><VisaIcon></VisaIcon></div>
@@ -44,12 +51,13 @@ export let holder:string='Jeremy Mathew'
     background-color: rgba(239, 143, 53, 0.9);
     width:98%;
     right: -2px;
-    @apply transform ;
-
+    @apply transform transition-all ;
+    transform: rotate(12deg)
 
 }
-.crd-card-bg:hover{
+.crd-card-bg.hover{
     transform: rotate(0deg)
+
 }
 *::before{
     @apply block w-full h-full absolute;
@@ -64,8 +72,9 @@ export let holder:string='Jeremy Mathew'
     box-shadow: 0 0 .1rem 0 rgba(255, 194, 124, 0.2)
     /* filter:blur(1px) */
 }
+
 .card-content{
-    @apply   w-full h-full  rounded-3xl relative   ;
+    @apply   w-full h-full  rounded-3xl relative cursor-pointer   ;
     background-color: rgba(239, 143, 53, 0.1);
     top:-200%;
  
