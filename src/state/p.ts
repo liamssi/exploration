@@ -1,14 +1,28 @@
 import { outro_and_destroy_block } from 'svelte/internal'
 import { writable, readable } from 'svelte/store'
 
+
+export type User = {
+    username: string
+    fisrtName: string
+    lastName: string
+    type: string //
+    avatarUrl: string
+}
+
+
 export const user: User = {
     username: 'Jeremy',
     fisrtName: 'Jeremy',
-    lastNam: 'Jeremy',
+    lastName: 'Mathew',
     type: 'User', //
     avatarUrl: "./imgs/avatar.png"
 }
-
+export const creditCard={
+    holder:user.fisrtName+' '+user.lastName,
+    number:'94685224',
+    total:"1500.00",
+}
 export const notifications = writable([{
     title: 'Title1',
     content: 'content '
@@ -90,14 +104,6 @@ export const categories: category[] = [
     }
 ]
 
-
-export type User = {
-    username: string
-    fisrtName: string
-    lastNam: string
-    type: string //
-    avatarUrl: string
-}
 
 export type Order = {
     item: food,

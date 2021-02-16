@@ -17,7 +17,9 @@
     <MainView />
   </div>
   <!--make responsive -->
-  <div class="flex-grow h-full w-full   lg:w-96 lg:h-full bg-white ">
+  <div
+    class="flex-shrink-0 flex-grow-0 lg:flex-grow  hidden md:block  md:absolute md:right-0  md:h-full lg:static lg:w-96 lg:h-full bg-white z-50 "
+  >
     <SideRight />
   </div>
 </div>
