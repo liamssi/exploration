@@ -39,6 +39,14 @@ export let holder:string='Jeremy Mathew'
 
 </div>
 <style>
+    .crd-card-bg{
+    @apply  h-full rounded-3xl relative shadow-md ;
+    background-color: rgba(239, 143, 53, 0.9);
+    width:98%;
+    right: -2px;
+    @apply transform;
+    transform: rotate(10deg)
+}
 *::before{
     @apply block w-full h-full absolute;
     content:'';
@@ -123,9 +131,11 @@ export let holder:string='Jeremy Mathew'
 
 .bg:nth-child(2n)::before{
 @apply opacity-80 block absolute box-content ;
- background: linear-gradient(to top,rgba(255, 255,255, 0.1)20%,rgba(239, 143, 53, 0.5) 45%); 
-
-
+ background: linear-gradient(to top,rgba(255, 255,255, 0.1)20%,rgba(239, 143, 53, 0.4) 45%);
+}
+.bg:nth-child(6)::before{
+@apply opacity-80 block absolute box-content ;
+background: linear-gradient(to top,rgba(239, 143, 53, 0.5) 45%,rgba(255, 255,255, 0.1));
 }
 .bg:nth-child(2n+1)::before{
 @apply opacity-80 block absolute box-content  ;
@@ -134,12 +144,5 @@ background-color:rgba(239, 143, 53, 0.5)
 
 }
 
-.crd-card-bg{
-    @apply  h-full rounded-3xl relative ;
-    background-color: rgba(239, 143, 53, 0.9);
-    width:98%;
-    right: -2px;
-    @apply transform;
-    transform: rotate(10deg)
-}
+
 </style>
