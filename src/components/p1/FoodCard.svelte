@@ -56,7 +56,7 @@
 
 <style>
   .card {
-    @apply w-72 h-72  px-4  rounded-2xl cursor-pointer relative;
+    @apply w-72 h-72  px-4  rounded-3xl cursor-pointer relative;
     /* some hover efect */
   }
 
@@ -64,7 +64,7 @@
     @apply text-4xl w-44 h-44   rounded-full z-20;
   }
   .content {
-    @apply bg-white shadow-sm w-full h-2/3 rounded-xl absolute bottom-1 z-10 px-3 pb-2  pt-24 font-semibold;
+    @apply bg-white shadow-sm w-full h-2/3 rounded-3xl absolute bottom-1 z-10 px-3 pb-2  pt-24 font-semibold;
   }
 
   .card:hover > * {

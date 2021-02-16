@@ -47,7 +47,7 @@ let hover= false;
 </div>
 <style>
     .crd-card-bg{
-    @apply  h-full rounded-3xl relative shadow-sm  hover:shadow-md ;
+    @apply  h-full rounded-3xl relative shadow-sm opacity-80 hover:shadow-md  ;
     background-color: rgba(239, 143, 53, 0.9);
     width:98%;
     right: -2px;
@@ -56,6 +56,7 @@ let hover= false;
 
 }
 .crd-card-bg.hover{
+    @apply opacity-100;
     transform: rotate(0deg)
 
 }
