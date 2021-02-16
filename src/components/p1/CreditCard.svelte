@@ -40,12 +40,16 @@ export let holder:string='Jeremy Mathew'
 </div>
 <style>
     .crd-card-bg{
-    @apply  h-full rounded-3xl relative shadow-md ;
+    @apply  h-full rounded-3xl relative shadow-sm  hover:shadow-md ;
     background-color: rgba(239, 143, 53, 0.9);
     width:98%;
     right: -2px;
-    @apply transform;
-    transform: rotate(10deg)
+    @apply transform ;
+
+
+}
+.crd-card-bg:hover{
+    transform: rotate(0deg)
 }
 *::before{
     @apply block w-full h-full absolute;
@@ -53,7 +57,8 @@ export let holder:string='Jeremy Mathew'
     
 }
 .card{
-    @apply   w-full h-full  rounded-3xl relative bg-transparent ;
+
+    @apply   w-full h-full  rounded-3xl relative bg-transparent shadow ;
     top:-100%;
     border: 4px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 .1rem 0 rgba(255, 194, 124, 0.2)
