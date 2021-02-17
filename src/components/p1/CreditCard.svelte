@@ -1,6 +1,5 @@
 <script lang="ts">
   import { creditCard } from "$state/p";
-
   import SimIcon from "./SimIcon.svelte";
   import VisaIcon from "./VisaIcon.svelte";
   let hover = false;

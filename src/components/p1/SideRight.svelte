@@ -6,7 +6,7 @@
   import { horizentalScroll } from "./utils/hscroll";
 </script>
 
-<div class=" h-full  flex flex-col p-4 justify-evenly space-y-5 bg-white">
+<div class="h-full flex flex-col p-4 justify-evenly space-y-5 bg-red-200 xsm:bg-green-500">
   <div class="flex flex-row items-center space-x-5 justify-end p-4">
     <!-- notification -->
     <Notification />
@@ -21,8 +21,8 @@
   <div class="flex-grow"><OrderMenu /></div>
 
   <div
-    class=" bg-orange-400 hover:bg-orange-500 shadow text-white text-center
-        py-3 rounded-full roboto cursor-pointer transition-colors"
+    class="flex-grow flex-shrink-0 bg-orange-400 hover:bg-orange-500 shadow text-white text-center
+        py-3  rounded-full roboto cursor-pointer transition-colors"
   >
     Checkout
   </div>

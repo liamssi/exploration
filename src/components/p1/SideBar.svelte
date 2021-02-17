@@ -1,13 +1,15 @@
 <script lang="ts">
-  import Icon from "./Icon.svelte";
+  import { toggleSide } from "./utils/hscroll";
+  import Avatar from "./Avatar.svelte";
+import Icon from "./Icon.svelte";
   import Icons from "./Icons.svelte";
 </script>
 
 <div
   id="side-bar"
-  class="w-full h-full  flex flex-row md:flex-col justify-evenly items-center md:justify-start md:space-y-4  md:pt-20 md:pb-10"
+  class="w-full h-full  flex flex-row md:flex-col justify-evenly items-center md:justify-start md:space-y-4  md:pt-20 md:pb-10 overflow-auto"
 >
-  <div class="menu-item active">
+  <div class="menu-item active" use:toggleSide>
     <Icon name="home" class={"w-full h-full"} />
   </div>
   <div class="menu-item">
@@ -25,15 +27,18 @@
   <div class="menu-item">
     <Icon name="cog" class={"w-full h-full "} />
   </div>
-  <div class="hidden md:block flex-grow" />
+  <div class='flex-auto hidden md:block'></div>
   <div class="menu-item">
     <Icon name="logout" class={"w-full h-full"} />
+  </div>
+  <div class="w-14 h-14  cursor-pointer rounded-full  block md:hidden" use:toggleSide>
+   <Avatar extended={false}></Avatar>
   </div>
 </div>
 
 <style>
-  .menu-item {
-    @apply w-14 h-14  p-4  container cursor-pointer rounded-full hover:bg-gray-100;
+  .menu-item {  
+    @apply w-14 h-14 flex-none p-4  container cursor-pointer rounded-full hover:bg-gray-100;
   }
   .menu-item.active {
     @apply bg-orange-400 hover:bg-orange-500 text-white;

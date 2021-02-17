@@ -1,8 +1,6 @@
 <script lang="ts">
 import type {Order} from '$state/p'
 import Icon from './Icon.svelte'
-import Icons from './Icons.svelte';
-
 
 let colors=['orange','blue','green']
 

@@ -18,10 +18,10 @@ export const user: User = {
     type: 'User', //
     avatarUrl: "./imgs/avatar.png"
 }
-export const creditCard={
-    holder:user.fisrtName+' '+user.lastName,
-    number:'94685224',
-    total:"1500.00",
+export const creditCard = {
+    holder: user.fisrtName + ' ' + user.lastName,
+    number: '94685224',
+    total: "1500.00",
 }
 export const notifications = writable([{
     title: 'Title1',
@@ -203,3 +203,6 @@ const ords: Order[] = [{
 ]
 
 export const orders = writable(ords)
+
+
+export const showRightSide = writable(false)
