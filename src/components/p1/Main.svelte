@@ -4,9 +4,9 @@ import MainView from "./MainView.svelte";
 import SideBar from "./SideBar.svelte";
 import SideRight from "./SideRight.svelte";
 import Icons from "./Icons.svelte";
-import { showRightSide } from "$state/p";
-
-
+import {
+    showRightSide
+} from "$state/p";
 </script>
 
 <Icons />
@@ -24,7 +24,7 @@ import { showRightSide } from "$state/p";
 </div>
   <!--make responsive -->
   <div id='side-right'
-    class="flex-shrink-0 flex-grow-0 lg:flex-grow  absolute  block  h-screen {$showRightSide ? 'right-0' : '-right-full' }  lg:static   lg:w-96 lg:h-full bg-white z-50 transition-all "
+    class="flex-shrink-0 flex-grow-0 w-80  lg:flex-grow  absolute  block  lg:static  h-screen lg:h-full   {$showRightSide ? 'right-0' : '-right-full' }  bg-white z-50 transition-all duration-500 "
   >
     <SideRight />
   </div>

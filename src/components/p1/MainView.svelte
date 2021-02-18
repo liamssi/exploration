@@ -6,7 +6,7 @@
 
 <div class="view noscrollbar flex flex-col py-6 space-y-10 ">
   <div class="flex-none px-6"><TopBar /></div>
-  <div class="flex-none px-6">
+  <div class="flex-auto px-6">
     <Banner />
   </div>
 

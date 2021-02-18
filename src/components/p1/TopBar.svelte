@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { toggleSide } from "./utils/hscroll";
 import Search from "./Search.svelte";
 import Icon from './Icon.svelte'
 </script>
@@ -11,11 +12,12 @@ import Icon from './Icon.svelte'
 
         <span class="emoji"> 😋 </span>
     </div>
-    <div class="flex flex-row space-x-2 items-baseline "
+    <div class="flex flex-row space-x-2 items-center "
         >
         <Search />
  
-        
-        <Icon class='flex-none' name='home'></Icon>
+        <span class='text-gray-500 cursor-pointer hover:bg-white hover:text-gray-600 hover:shadow-sm rounded-md' use:toggleSide>
+        <Icon class='flex-none hidden md:block lg:hidden ' strokeWidth='{1.8}' size={25} name='menu'></Icon>
+        </span>
     </div>
 </div>

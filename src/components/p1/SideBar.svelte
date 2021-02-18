@@ -7,9 +7,9 @@ import Icon from "./Icon.svelte";
 
 <div
   id="side-bar"
-  class="w-full h-full  flex flex-row md:flex-col justify-evenly items-center md:justify-start md:space-y-4  md:pt-20 md:pb-10 overflow-auto"
+  class="w-full h-full  flex flex-row justify-evenly items-center md:flex-col  md:space-y-4  md:pt-20 md:pb-10 overflow-auto"
 >
-  <div class="menu-item active" use:toggleSide>
+  <div class="menu-item active ">
     <Icon name="home" class={"w-full h-full"} />
   </div>
   <div class="menu-item">
@@ -28,12 +28,13 @@ import Icon from "./Icon.svelte";
     <Icon name="cog" class={"w-full h-full "} />
   </div>
   <div class='flex-auto hidden md:block'></div>
-  <div class="menu-item">
+  <div class="menu-item hidden md:block">
     <Icon name="logout" class={"w-full h-full"} />
   </div>
-  <div class="w-14 h-14  cursor-pointer rounded-full  block md:hidden" use:toggleSide>
-   <Avatar extended={false}></Avatar>
+  <div class="menu-item block md:hidden"  use:toggleSide>
+    <Icon name="horizontal-dots" class={"w-full h-full"} />
   </div>
+
 </div>
 
 <style>
