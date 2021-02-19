@@ -22,8 +22,15 @@
 }
 html,
 body {
+  @apply overflow-hidden bg-red-400;
+  max-width: 100vw;
+  max-height: 100vh;
   padding: 0;
   margin: 0;
+}
+.max-screen {
+  max-width: 100vw;
+  max-height: 100vh;
 }
 .roboto {
   font-family: Roboto;
@@ -55,4 +62,7 @@ body {
 
 *::-webkit-scrollbar-thumb {
   @apply bg-gray-100 cursor-pointer hover:bg-gray-200;
+}
+.title-1 {
+  @apply text-lg font-bold;
 }

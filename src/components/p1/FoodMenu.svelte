@@ -34,7 +34,7 @@
   </div>
 
   <div
-    class="noscrollbar w-full horizental-view overflow-scroll noscrollbar flex flex-row  space-x-6 lg:justify-between flex-nowrap  px-6"
+    class="noscrollbar w-full horizental-view overflow-scroll noscrollbar flex flex-row  space-x-6 lg:justify-between flex-nowrap  px-6 mb-8"
     use:horizentalScroll
   >
     {#each categories as category, index}

@@ -3,10 +3,10 @@
 </script>
 
 <div
-  class="flex flex-row  bg-white  py-2 px-3 rounded-full text-gray-400 focus-within:text-gray-500  cursor-pointer"
+  class="flex flex-row  bg-white  py-2 px-3 rounded-full text-gray-400 focus-within:text-gray-500 s-pointer"
 >
   <input
-    class="flex-grow text-md truncate  focus:outline-none focus:placeholder-gray-300"
+    class="flex-grow  text-md truncate hidden sm:block focus:outline-none  focus:placeholder-gray-300"
     type="text"
     placeholder="Search food by name"
   />

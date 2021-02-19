@@ -3,17 +3,23 @@
   import OrderMenu from "./OrderMenu.svelte";
   import Avatar from "./Avatar.svelte";
   import Notification from "./Notification.svelte";
-  import { horizentalScroll,toggleSide } from "./utils/hscroll";
+  import { horizentalScroll, toggleSide } from "./utils/hscroll";
 
-import Icon from "./Icon.svelte";
+  import Icon from "./Icon.svelte";
 </script>
 
-<div class="h-full flex flex-col p-4 justify-evenly space-y-5  xsm:bg-green-500 relative">
-  <div class="flex-none flex flex-row items-center space-x-5 justify-end ">
+<div class="h-full flex flex-col p-4 justify-evenly space-y-5  relative ">
+  <div class="flex-none flex flex-row items-center space-x-5 justify-end  ">
     <!-- notification -->
-    <div  use:toggleSide>
-    <Icon name='x'  size='25' class='lg:hidden text-gray-500 rounded-full hover:bg-orange-300 hover:text-white cursor-pointer transition-colors' strokeWidth='{1.5}' ></Icon>
+    <div class="relative -left-16 " use:toggleSide>
+      <Icon
+        name="x"
+        size="25"
+        class="lg:hidden text-gray-500 rounded-full hover:bg-blue-200 hover:text-white cursor-pointer transition-colors"
+        strokeWidth={1.5}
+      />
     </div>
+
     <Notification />
 
     <Avatar />
