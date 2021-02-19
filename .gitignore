@@ -108,7 +108,6 @@ dist
 .DS_Store
 node_modules
 /.svelte
-/build
 /functions
 >>>>>>> base template setup
 
