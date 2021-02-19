@@ -1,5 +1,4 @@
-import { outro_and_destroy_block } from 'svelte/internal'
-import { writable, readable } from 'svelte/store'
+import { writable } from 'svelte/store'
 
 
 export type User = {
