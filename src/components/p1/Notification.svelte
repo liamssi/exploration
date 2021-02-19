@@ -22,7 +22,7 @@
     name="bell"
     strokeWidth={1.4}
     class="w-11 h-11  p-2 rounded-full bg-gray-50 hover:bg-white {visible
-      ? 'bg-orange-50'
+      ? 'bg-blue-50'
       : ''}  text-gray-600 hover:text-gray-800 cursor-pointer"
   />
   {#if $notifications.length}
