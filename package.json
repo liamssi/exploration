@@ -3,8 +3,9 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"start": "svelte-kit start"
+		"build": "svelte-kit build && svelte-kit adapt" ,
+		"start": "svelte-kit start",
+		"adapt": "svelte-kit adapt"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-build-script": "^2.0.11",
@@ -12,7 +13,6 @@
 		"@snowpack/plugin-typescript": "^1.0.0",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "^1.0.0-next.0",
-		"@sveltejs/adapter-vercel": "^1.0.0-next.0",
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
 		"autoprefixer": "^10.1.0",
@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/typography": "^0.4.0",
-		"tailwindcss-shadow-outline-colors": "0.0.8"
+		"tailwindcss-shadow-outline-colors": "0.0.8",
+		"vercel": "^21.2.3"
 	}
 }

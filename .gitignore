@@ -111,3 +111,5 @@ node_modules
 /build
 /functions
 >>>>>>> base template setup
+
+.vercel
