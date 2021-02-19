@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { setContext, getContext, onMount } from "svelte";
+  import { setContext } from "svelte";
 
   import { horizentalScroll } from "./utils/hscroll";
   import Icon from "./Icon.svelte";
@@ -11,7 +11,7 @@
 
   function setMenu(menu) {
     // alert("hi");
-    console.log("menu", menu);
+    //console.log("menu", menu);
     currentMenu = menu;
   }
   let active = 0;

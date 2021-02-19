@@ -22,7 +22,7 @@
   </div>
 
   <div
-    class="absolute left-45 z-50 flex flex-col items-end lg:items-center justify-center space-y-2 "
+    class="absolute left-45 z-40 flex flex-col items-end lg:items-center justify-center space-y-2 "
     on:mouseover={() => {
       hover = true;
     }}
@@ -48,8 +48,13 @@
     </div>
   </div>
   <div
-    id="chokchok"
     class=" h-full absolute -bottom-1 -left-7 overflow-hidden cursor-pointer"
+    on:mouseover={() => {
+      hover = true;
+    }}
+    on:mouseleave={() => {
+      hover = false;
+    }}
   >
     <div class="img h-full transform  img  flex flex-col ">
       <BannerImg />

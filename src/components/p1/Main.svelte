@@ -5,9 +5,13 @@
   import SideRight from "./SideRight.svelte";
   import Icons from "./Icons.svelte";
   import { showRightSide } from "$state/p";
+  import CopyrightBanner from "./CopyrightBanner.svelte";
 </script>
 
 <Icons />
+<div class="absolute top-0 w-full z-50">
+  <CopyrightBanner />
+</div>
 <div
   class="flex  flex-col-reverse   h-screen relative  md:flex-row bg-red-200 overflow-hidden overscroll-contain noscrollbar"
 >
@@ -23,7 +27,7 @@
     id="side-right"
     class="flex-shrink-0 flex-grow-0 w-96  absolute  block  lg:static  h-screen lg:h-full   {$showRightSide
       ? 'right-0'
-      : '-right-full'}  bg-white z-50 transition-all duration-500 "
+      : '-right-full'}  bg-white z-40 transition-all duration-500 "
   >
     <SideRight />
   </div>
